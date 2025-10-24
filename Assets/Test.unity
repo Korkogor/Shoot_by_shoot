@@ -1868,6 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72cd2f87b734acd9152a16ccd9ac6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+  prefab: {fileID: 0}
 --- !u!4 &255739191
 Transform:
   m_ObjectHideFlags: 0
@@ -7300,7 +7301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  rotationSpeed: 5
+  rotationSpeed: 20
 --- !u!114 &1474475250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7313,6 +7314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72cd2f87b734acd9152a16ccd9ac6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+  prefab: {fileID: 1625405396891631092, guid: bc5decb1f80b24d4da90eefa9046982d, type: 3}
 --- !u!1001 &1519611207
 PrefabInstance:
   m_ObjectHideFlags: 0

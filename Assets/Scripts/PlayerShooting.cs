@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     public GameObject prefab; // Предоставляем скрипту доступ к префабу
+    public GameObject shootPoint;
 
     void Update()
     {

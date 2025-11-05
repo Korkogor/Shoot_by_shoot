@@ -4,6 +4,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float rotationSpeed;
+
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         if (Input.GetKey(KeyCode.W)) {transform.Translate(0, 0, speed * Time.deltaTime);}
@@ -13,5 +19,7 @@ public class PlayerMovement : MonoBehaviour
         
         float mouseX = Input.GetAxis("Mouse X"); // считывание горизонтального перемещения мыши
         transform.Rotate(0, mouseX * rotationSpeed * Time.deltaTime, 0); //горизонтальный поворот объекта на основе движения мыши
+        
     }
+    
 }

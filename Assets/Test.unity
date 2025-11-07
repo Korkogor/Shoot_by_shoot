@@ -1839,52 +1839,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 10c805e783fd2d64f84bdbb6fae5d25f, type: 3}
   m_PrefabInstance: {fileID: 254712404}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &255739189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 255739191}
-  - component: {fileID: 255739190}
-  m_Layer: 0
-  m_Name: PlayerShooting
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &255739190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255739189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b72cd2f87b734acd9152a16ccd9ac6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
-  prefab: {fileID: 0}
-  shootPoint: {fileID: 0}
---- !u!4 &255739191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 255739189}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.65718, y: 49.58428, z: 120.42591}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &257037718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7361,8 +7315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72cd2f87b734acd9152a16ccd9ac6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
-  prefab: {fileID: 1625405396891631092, guid: bc5decb1f80b24d4da90eefa9046982d, type: 3}
-  shootPoint: {fileID: 496373056}
+  prefab: {fileID: 7730674156093664907, guid: bc5decb1f80b24d4da90eefa9046982d, type: 3}
 --- !u!4 &1474475252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400066, guid: 860793eb3324391468f1c120a75ec049, type: 3}
@@ -10958,7 +10911,6 @@ SceneRoots:
   - {fileID: 203844589}
   - {fileID: 1764709044}
   - {fileID: 1474475242}
-  - {fileID: 255739191}
   - {fileID: 1300035329}
   - {fileID: 832132274}
   - {fileID: 2065601082}

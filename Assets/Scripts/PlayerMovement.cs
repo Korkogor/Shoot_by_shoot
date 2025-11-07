@@ -13,15 +13,15 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-
+                                            // P: 173
     public void OnMove(InputValue value)
     {
-        movementValue = value.Get<Vector2>() * speed * Time.deltaTime;
+        movementValue = value.Get<Vector2>() * speed;
     }
 
     public void OnLook(InputValue value)
     {
-        lookValue = value.Get<float>() * rotationSpeed * Time.deltaTime;
+        lookValue = value.Get<Vector2>().x * rotationSpeed;
     }
     void Update()
     {

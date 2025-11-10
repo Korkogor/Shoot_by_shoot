@@ -11,16 +11,9 @@ public class PlayerShooting : MonoBehaviour
         if (value.isPressed)
         {
             GameObject clone = Instantiate(prefab);
-        
+
             clone.transform.position = shootPoint.transform.position;
             clone.transform.rotation = shootPoint.transform.rotation;
         }
     }
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Mouse0))
-    //     {
-    //         Instantiate(prefab, shootPoint.transform.position, shootPoint.transform.rotation); // Функция Instantiate используется для клонирования префаба
-    //     }
-    // }
 }

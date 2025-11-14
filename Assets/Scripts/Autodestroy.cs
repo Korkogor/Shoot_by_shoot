@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Autodestroy : MonoBehaviour
 {
-    [SerializeField] private float delay;
+    public float delay;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

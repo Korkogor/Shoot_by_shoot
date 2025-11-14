@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Life : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float amount;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (amount <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

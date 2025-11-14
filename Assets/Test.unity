@@ -5697,6 +5697,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AidKit
   amount: 20
+  rotationSpeed: 90
+  hoverHeight: 0.004
+  hoverSpeed: 5
 --- !u!65 &924353586
 BoxCollider:
   m_ObjectHideFlags: 0

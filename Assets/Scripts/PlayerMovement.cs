@@ -7,11 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     private Vector2 movementValue;
     private float lookValue;
+    private Rigidbody rb;
 
     void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
+        rb = GetComponent<Rigidbody>();
     }
                                             // P: 173
     public void OnMove(InputValue value)
@@ -25,16 +28,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        transform.Translate(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime );
-        transform.Rotate(Vector3.up, lookValue * Time.deltaTime);
-        // if (Input.GetKey(KeyCode.W)) {transform.Translate(0, 0, speed * Time.deltaTime);}
-        // if (Input.GetKey(KeyCode.S)){transform.Translate(0, 0, -speed * Time.deltaTime);}
-        // if (Input.GetKey(KeyCode.A)){transform.Translate(-speed * Time.deltaTime, 0, 0);}
-        // if (Input.GetKey(KeyCode.D)){transform.Translate(speed * Time.deltaTime, 0, 0);}
-        //
-        // float mouseX = Input.GetAxis("Mouse X"); // считывание горизонтального перемещения мыши
-        // transform.Rotate(0, mouseX * rotationSpeed * Time.deltaTime, 0); //горизонтальный поворот объекта на основе движения мыши
-        
+        rb.AddRelativeForce(movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime ); //P: 195
+        rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
     }
     
 }
